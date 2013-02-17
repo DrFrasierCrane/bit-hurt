@@ -21,6 +21,8 @@ def convert(num):
 	
 	if num == 0:
 		print 0
+	elif num < 0:
+		raise ValueError, "Please input a positive number"
 	else:
 		create(num)
 
