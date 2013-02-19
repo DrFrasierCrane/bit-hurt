@@ -1,4 +1,4 @@
-def convert(num):	
+def dec2bin(num):	
 	if num == 0:
 		print 0
 	elif num < 0:
