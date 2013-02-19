@@ -7,13 +7,12 @@ def convert(num):
 		binlist = []
 	
 		while num > 0:
-			binlist.append(num % 2)
+			binlist.insert(0, num % 2)
 			num = num / 2
 		
-		binlist.reverse()
 		binlist = int(''.join(str(i) for i in binlist))
-		print binlist
+		print "Binary number is:", binlist
 
-num = int(raw_input("> "))
+num = int(raw_input("Please input decimal: "))
 
 convert(num)
