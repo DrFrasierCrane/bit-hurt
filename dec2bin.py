@@ -15,4 +15,4 @@ def dec2bin(num):
 
 num = int(raw_input("Please input decimal: "))
 
-convert(num)
+dec2bin(num)
