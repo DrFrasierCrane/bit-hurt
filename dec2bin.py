@@ -1,3 +1,4 @@
+## Code written by Tyler Sartin on 18 February 2013
 def dec2bin(num):	
 	if num == 0:
 		print 0
@@ -11,8 +12,7 @@ def dec2bin(num):
 			num = num / 2
 		
 		binlist = int(''.join(str(i) for i in binlist))
-		print "Binary number is:", binlist
+		print binlist
 
-num = int(raw_input("Please input decimal: "))
 
-dec2bin(num)
+dec2bin(int(raw_input()))
