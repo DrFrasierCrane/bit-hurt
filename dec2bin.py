@@ -9,7 +9,7 @@ def dec2bin(num):
 	
 		while num > 0:
 			binlist.insert(0, num % 2)
-			num = num / 2
+			num /= 2
 		
 		binlist = int(''.join(str(i) for i in binlist))
 		print binlist
