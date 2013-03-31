@@ -10,9 +10,12 @@ set5 = "JW 0.6 1.0 2.0 0.6 1.5 3.0 0.6 1.0 2.0 0.6 1.0 2.0 0.6 1.0 2.0 0.7 0.5 0
 set6 = "KF 1.0 3.0 5.0 2.0 3.0 8.0 0.5 1.0 3.0 2.0 4.0 8.0 0.2 1.0 2.0 0.2 1.0 3.0 0.2 1.0 2.0 0.2 1.0 2.0 0.2 1.0 2.5 0.2 1.0 2.5 0.5 3.0 5.0 0.5 2.0 4.0 0.2 1.0 2.5 0.5 2.0 4.0"
 
 
+# Place all data sets into a list and create a new file named 'target_file.csv'. You can 
+# change this name to whatever you want.
 all = [set1, set2, set3, set4, set5, set6]
-file = open('Projected_Results.csv', 'w')
+file = open('target_file.csv', 'w')
 
+# Split the data and join by commas for full comma separated value file.
 for i in all:
 	i = ','.join(i.split())
 	file.write(i)
